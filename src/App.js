@@ -18,8 +18,7 @@ function App() {
   const handleScroll = (event) => {
     // Check if the user has scrolled to the bottom of the content
     if (
-      event.target.scrollTop + event.target.clientHeight >=
-      event.target.scrollHeight
+      event.target.scrollTop + event.target.clientHeight <= event.target.scrollHeight
     ) {
       setIsButtonEnabled(true);
     }
