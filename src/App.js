@@ -41,7 +41,7 @@ function App() {
               content={content}
               onScroll={handleScroll}
             />
-            <button disabled={isButtonEnabled}>I Agree</button>
+            <button disabled={!isButtonEnabled}>I Agree</button>
           </div>
         </div>
       </div>
